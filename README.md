@@ -33,7 +33,9 @@ git push -u origin main
 git remote add origin git@github.com:vikashkumars/netflix-gpt.git
 git branch -M main
 git push -u origin main
-###
+
+### Setup a react routing
+npm i -D react-router-dom
 
 ###
 
@@ -51,8 +53,10 @@ git push -u origin main
 
 ###
 
-###
-
+### Steps for design
+### Configuraed TailwindCSS for create-react-app
+### Header
+Login form
 
 
 

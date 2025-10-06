@@ -1,12 +1,10 @@
 
 import './App.css';
+import Body from './components/Body';
 
 function App() {
   return (
-    <div className="text-center text-3xl font-bold underline">
-      Namste Everyone. lets build netflix chatGPT
-      
-    </div>
+   <Body />
   );
 }
 
