@@ -1,3 +1,63 @@
+### Create React app
+npx create-react-app netfilx-gpt
+### Tailwind 
+Go to the site https://v3.tailwindcss.com/docs/guides/create-react-app
+
+### Features
+-Login/Singup
+    -Sign In / Sign Up Form
+    -Redirect to Browse Page
+- Browse(After authetication)
+    -Header
+    -Main Movie
+        -Tailer in Background
+        -Title & Description
+        -Movie Suggestion
+            - Movie Lists * N
+-NetFlexGPT
+    -Search Bar
+    - Movie Suggestions
+###
+-Git hub: Create new repository such as netflix-gpt with public view
+- click create 
+-Copy the cmd and run
+### or create a new repository on the command line
+echo "# netflix-gpt" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:vikashkumars/netflix-gpt.git
+git push -u origin main
+###  (Run)…or push an existing repository from the command line
+git remote add origin git@github.com:vikashkumars/netflix-gpt.git
+git branch -M main
+git push -u origin main
+###
+
+###
+
+###
+
+###
+
+###
+
+###
+
+###
+
+###
+
+###
+
+###
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +128,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
