@@ -56,8 +56,19 @@ npm i -D react-router-dom
 ### Steps for design
 ### Configuraed TailwindCSS for create-react-app
 ### Header
-Login form
-
+### Routing of App
+### Login form
+### Sign Up form
+### Form validation
+### useRef Hook
+### Firebase app setup
+### Deploying our app to production
+### Created SignUp User Account
+### Implement Sign In User Api
+### Created Redux Store with userSlice
+### Implemented Sign out
+### Updated profile
+### Fetch movies from TMdb
 
 
 
