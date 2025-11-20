@@ -7,14 +7,14 @@ import {
   updateProfile
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
-import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
+import { BG, PHOTO_URL } from "../utils/constant";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
   const [errorMessage, setErrorMessage] = useState("");
-  const navigate = useNavigate();
+ 
   const email = useRef(null);
   const password = useRef(null);
   const name = useRef(null);
@@ -41,7 +41,7 @@ const Login = () => {
           // update the profile
           updateProfile(user, {
             displayName: name.current.value,
-            photoURL: "https://avatars.githubusercontent.com/u/13213471?v=4",
+            photoURL: PHOTO_URL,
           })
             .then(() => {
               // Profile updated!
@@ -56,7 +56,7 @@ const Login = () => {
                           photoURL: photoURL,
                         })
                       );
-              navigate("/browse");
+              
             })
             .catch((error) => {
               // An error occurred
@@ -75,7 +75,7 @@ const Login = () => {
         });
     } else {
       // Sign In Logic
-      console.log("Sign in starts");
+     // console.log("Sign in starts");
       signInWithEmailAndPassword(
         auth,
         email.current.value,
@@ -84,7 +84,7 @@ const Login = () => {
         .then((userCredential) => {
           // Signed in
           const user = userCredential.user;
-          navigate("/browse");
+         
           // ...
         })
         .catch((error) => {
@@ -103,7 +103,7 @@ const Login = () => {
       <Header />
       <div className="absolute">
         <img
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/d482944d-eab4-4a64-89c9-a07a508a6e42/web/US-en-20250929-TRIFECTA-perspective_aacb0ca6-a123-4989-8138-ed5181752e30_large.jpg"
+          src={BG}
           alt="bg"
         />
       </div>

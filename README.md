@@ -69,6 +69,26 @@ npm i -D react-router-dom
 ### Implemented Sign out
 ### Updated profile
 ### Fetch movies from TMdb
+### BugFix: SignUp user displayName and profile picture update
+### BugFix: If the user is not loggedin Redirect/browse to login page and vice-versa
+### Usubscribed to the onAuthStateChanged callback
+### Add hardcoded values to the constants file
+### Rigisterd TMDB API & create an app & get access token
+### Get data from TMDb now playing movies list API
+### Custom Hook for Now Playing Movies
+### Create MovieSlice
+### Update Store with Now Playing Movies
+### Planning for MainContainer and Secondary Container
+### Fetch data for Trailer video
+### Embedded the youtube vedio and make it auto play and mute
+### Tailwind classes to make main Container look awesome
+### Build Secondary Component
+### Build Movie List
+### Build Movie Card
+### TMDB image CDN URL
+### Made the Browse page amzing with Tailwind CSS
+### UsePopularMoview Custom Hook
+###
 
 
 
