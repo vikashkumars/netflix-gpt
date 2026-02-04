@@ -88,7 +88,7 @@ npm i -D react-router-dom
 ### TMDB image CDN URL
 ### Made the Browse page amzing with Tailwind CSS
 ### UsePopularMoview Custom Hook
-###
+### GPT Search Features
 
 
 

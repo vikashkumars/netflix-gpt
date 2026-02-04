@@ -5,7 +5,8 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import {onAuthStateChanged} from "firebase/auth";
 import { addUser,removeUser } from "../utils/userSlice";
-import { LOGO } from "../utils/constant";
+import { LOGO, SUPPORTED_LANGUAGES } from "../utils/constant";
+import {toggleGptSearchView} from "../utils/gptSlice";
 
 const Header = () => {
   const navigate = useNavigate();
@@ -49,6 +50,10 @@ const Header = () => {
     // Unsubscribe when componnet unmounts 
     return () => unsubscribe();
   }, []);
+  const handleGPTSearchClick = () => {
+    //Toggle GPT Search functionality
+    dispatch(toggleGptSearchView());
+  };
   return (
     <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between">
       <img
@@ -58,6 +63,16 @@ const Header = () => {
       />
 
      {user && ( <div className="flex p-2 justify-between">
+      <select className="bg-black text-white rounded-md p-2 m-2 mx-4 my-4">
+        {SUPPORTED_LANGUAGES.map((lang) => (
+          <option key={lang.indentifier} value={lang.indentifier}>
+            {lang.name.toUpperCase()}
+          </option>
+        ))    
+        }  
+      </select>
+        <button onClick={handleGPTSearchClick} className="py-2 px-4 m-2 mx-4 my-4 rounded-lg bg-purple-800 text-white">
+          GPT Search </button>
         <img
           className="w-12 h-12"
           alt="userIcon"
