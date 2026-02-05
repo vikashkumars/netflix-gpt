@@ -1,14 +1,23 @@
-const configSlice = {
+import { createSlice } from "@reduxjs/toolkit";
+
+const configSlice =  createSlice({
   name: 'config',
   initialState: {       
-    theme: 'light', 
+    theme: 'light',
+    lang : 'en'
 
     },
     reducers: { 
-        setTheme: (state, action) => {
+        theme: (state, action) => {
             state.theme = action.payload;
         },
+        changeLanguage: (state, action) => {
+            state.lang = action.payload;
+        }
+
     },
-};
+});
+export const {changeLanguage, theme} = configSlice.actions;
+export default configSlice.reducer;
 
 

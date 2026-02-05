@@ -15,16 +15,18 @@ const Browse = () => {
     <div>
       <Header /> 
       {
-        showGptSearch ? (<GPTSearch />) :(
-          <>{/** react fragement example */}
-            <GPTSearch />
+        showGptSearch ? (
+        <GPTSearch />
+      ) :(
+        <>{/** react fragement example */}
             <MainContainer />
-          </>
+            <SecondaryContainer />  
+        </>
           
         ) 
       }
       
-      <SecondaryContainer />      
+        
       {/*
           MainContainer
             -VideoBackground

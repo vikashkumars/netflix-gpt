@@ -55,6 +55,20 @@ npm i -D react-router-dom
 
 ### Steps for design
 ### Configuraed TailwindCSS for create-react-app
+# Features
+    -Login /Sign Up 
+        - Sign In / Sign up form
+        - Redirect to Browse Page
+ - Browse(After authentication)
+    ### Header
+    ### Main Movie 
+        - Tailer in Background 
+        - Title & Description
+        - MovieSuggestions
+            - MovieList * N 
+    ### NetflixGPT
+        - Search Bar 
+        -Movie Suggestions
 ### Header
 ### Routing of App
 ### Login form
@@ -89,6 +103,11 @@ npm i -D react-router-dom
 ### Made the Browse page amzing with Tailwind CSS
 ### UsePopularMoview Custom Hook
 ### GPT Search Features
+### GPT Serach Page 
+### GPT Search Bar
+### (*)Multi- language Feature in our App
+### 
+###
 
 
 

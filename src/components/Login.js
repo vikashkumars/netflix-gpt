@@ -46,7 +46,7 @@ const Login = () => {
             .then(() => {
               // Profile updated!
               //dispatch the user 
-              //Auth will be updated value not from the old user 
+              //Auth will be updated value not from the old user i.e mentioned in current User
               const {uid, email, displayName, photoURL } = auth.currentUser;
                       dispatch(
                         addUser({
